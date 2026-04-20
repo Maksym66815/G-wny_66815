@@ -84,3 +84,45 @@ body{
     background-color: #1b5e20;
     transform: scale(1.05);
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #1b5e20;
+  }
+  
+  form input,
+  form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    background: white;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .error {
+    color: #c62828;
+    font-size: 13px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }

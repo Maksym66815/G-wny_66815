@@ -66,6 +66,30 @@
     </section>
 
     <section id="contact">
+      <h3>Formularz kontaktowy</h3>
+      <form id="contactForm" novalidate>
+           <label>Imię:
+             <input type="text" id="firstName" required>
+           </label>
+           <span class="error" id="firstNameError"></span>
+     
+         <label>Nazwisko:
+             <input type="text" id="lastName" required>
+         </label>
+           <span class="error" id="lastNameError"></span>
+     
+         <label>Email:
+             <input type="email" id="email" required>
+         </label>
+           <span class="error" id="emailError"></span>
+     
+         <label>Wiadomość:
+            <textarea id="message" required></textarea>
+         </label>
+           <span class="error" id="messageError"></span>
+     
+           <button type="submit">Wyślij</button>
+     </form>
       <h2>Kontakt</h2>
       <p>Email: <a href="mailto:maksim.shevchik@gmail.com">maksim.shevchik@gmail.com</a></p>
       <p>Telefon: <a href="tel:+48795031220">+48 795 031 220</a></p>
