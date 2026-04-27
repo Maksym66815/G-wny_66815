@@ -90,3 +90,25 @@ form.addEventListener("submit", function (e) {
     form.reset();
   }
 });
+
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
+
+    const skillsList = document.getElementById("skillsList");
+    const projectsList = document.getElementById("projectsList");
+
+    data.skills.forEach(skill => {
+      const li = document.createElement("li");
+      li.textContent = skill;
+      skillsList.appendChild(li);
+    });
+
+    data.projects.forEach(project => {
+      const li = document.createElement("li");
+      li.textContent = project;
+      projectsList.appendChild(li);
+    });
+
+  })
+  .catch(error => console.error("Błąd ładowania JSON:", error));
