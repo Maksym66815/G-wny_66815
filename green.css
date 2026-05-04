@@ -126,3 +126,51 @@ body{
     margin-top: -5px;
     margin-bottom: 5px;
   }
+
+  #notes {
+    background: #e8f5e9;
+  }
+  
+  #noteInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  #addNoteBtn {
+    padding: 10px 16px;
+  }
+  
+
+  #notesList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+
+  #notesList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #43a047;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  
+  #notesList button {
+    background-color: #c62828;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  #notesList button:hover {
+    background-color: #8e0000;
+  }

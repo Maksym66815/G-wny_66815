@@ -112,3 +112,49 @@ fetch("data.json")
 
   })
   .catch(error => console.error("Błąd ładowania JSON:", error));
+
+  const noteInput = document.getElementById("noteInput");
+const addNoteBtn = document.getElementById("addNoteBtn");
+const notesList = document.getElementById("notesList");
+
+
+let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+
+function renderNotes() {
+  notesList.innerHTML = "";
+
+  notes.forEach((note, index) => {
+    const li = document.createElement("li");
+    li.textContent = note;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Usuń";
+    deleteBtn.style.marginLeft = "10px";
+
+    deleteBtn.addEventListener("click", () => {
+      notes.splice(index, 1);
+      localStorage.setItem("notes", JSON.stringify(notes));
+      renderNotes();
+    });
+
+    li.appendChild(deleteBtn);
+    notesList.appendChild(li);
+  });
+}
+
+
+addNoteBtn.addEventListener("click", () => {
+  const value = noteInput.value.trim();
+
+  if (!value) return;
+
+  notes.push(value);
+  localStorage.setItem("notes", JSON.stringify(notes));
+
+  noteInput.value = "";
+  renderNotes();
+});
+
+
+renderNotes();
