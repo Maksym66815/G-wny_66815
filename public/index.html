@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maksym — 66815</title>
+  <link rel="stylesheet" href="green.css">
+</head>
+<body>
+
+
+  <header class="hero">
+    <div class="container">
+      <h1>Maksym — Frontend Developer</h1> 
+      <p>Uwielbiam tworzyć czyste i nowoczesne interfejsy</p>
+    </div>
+
+    <div class="btn-container">
+      <button id="themeBtn">Zmień temat</button>
+      <button id="toggleBtn">Pokaż/Ukryj projekty</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>O mnie</h2>
+      <p>Jestem studentem i frontend developerem, pasjonuję się tworzeniem estetycznych i funkcjonalnych aplikacji webowych. Pracuję z HTML, CSS, JavaScript oraz React.</p>
+      <img src="img/photo.jpg" alt="Photo" width="150">
+    </section>
+
+    <section id="skills">
+      <h2>Umiejętności</h2>
+      <ul id="skillsList"></ul>
+    </section>
+
+    <section id="experience">
+      <h2>Doświadczenie</h2>
+      <article>
+        <h3>Frontend Developer — Projekt Studencki</h3>
+        <p>Tworzenie osobistego CV w formie strony WWW, nauka HTML, CSS i podstaw JS.</p>
+      </article>
+      <article>
+        <h3>Praktyki w firmie GLP</h3>
+        <p>Praca nad prostymi komponentami webowymi.</p>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2>Edukacja</h2>
+      <p>Vistula University — Informatyka (Frontend Development) — student</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projekty</h2>
+      <ul id="projectsList"></ul>
+    </section>
+
+    <section id="notes">
+      <h2>Moje notatki</h2>
+    
+      <input type="text" id="noteInput" placeholder="Dodaj notatkę">
+      <button id="addNoteBtn">Dodaj</button>
+    
+      <ul id="notesList"></ul>
+    </section>
+
+    <section id="contact">
+      <h3>Formularz kontaktowy</h3>
+ <form id="contactForm" novalidate>
+      <label>Imię:
+        <input type="text" id="firstName" required>
+      </label>
+      <span class="error" id="firstNameError"></span>
+
+    <label>Nazwisko:
+        <input type="text" id="lastName" required>
+    </label>
+      <span class="error" id="lastNameError"></span>
+
+    <label>Email:
+        <input type="email" id="email" required>
+    </label>
+      <span class="error" id="emailError"></span>
+
+    <label>Wiadomość:
+       <textarea id="message" required></textarea>
+    </label>
+      <span class="error" id="messageError"></span>
+
+      <button type="submit">Wyślij</button>
+</form>
+      <h2>Kontakt</h2>
+      <p>Email: <a href="mailto:maksim.shevchik@gmail.com">maksim.shevchik@gmail.com</a></p>
+      <p>Telefon: <a href="tel:+48795031220">+48 795 031 220</a></p>
+      <p>Miasto: Warszawa</p>
+      <p>Linki: 
+        <a href="https://github.com/LunarShaded" target="_blank" rel="noopener noreferrer">GitHub</a>, 
+        <a href="https://www.instagram.com/lunarshadee?igsh=MThiYm5wNjh4anR5aw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </p>
+      
+    </section>
+
+    <footer>
+      <p>©2026 Maksym Shevchyk</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
