@@ -31,13 +31,7 @@
 
     <section id="skills">
       <h2>Umiejętności</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Git</li>
-      </ul>
+      <ul id="skillsList"></ul>
     </section>
 
     <section id="experience">
@@ -59,13 +53,43 @@
 
     <section id="projects">
       <h2>Projekty</h2>
-      <ul>
-        <li>Strona CV — osobista strona prezentująca moje umiejętności</li>
-        <li>Todo App CRUD — aplikacja do zarządzania zadaniami z SQL oraz React+Vite</li>
-      </ul>
+      <ul id="projectsList"></ul>
+    </section>
+
+    <section id="notes">
+      <h2>Moje notatki</h2>
+    
+      <input type="text" id="noteInput" placeholder="Dodaj notatkę">
+      <button id="addNoteBtn">Dodaj</button>
+    
+      <ul id="notesList"></ul>
     </section>
 
     <section id="contact">
+      <h3>Formularz kontaktowy</h3>
+ <form id="contactForm" novalidate>
+      <label>Imię:
+        <input type="text" id="firstName" required>
+      </label>
+      <span class="error" id="firstNameError"></span>
+
+    <label>Nazwisko:
+        <input type="text" id="lastName" required>
+    </label>
+      <span class="error" id="lastNameError"></span>
+
+    <label>Email:
+        <input type="email" id="email" required>
+    </label>
+      <span class="error" id="emailError"></span>
+
+    <label>Wiadomość:
+       <textarea id="message" required></textarea>
+    </label>
+      <span class="error" id="messageError"></span>
+
+      <button type="submit">Wyślij</button>
+</form>
       <h2>Kontakt</h2>
       <p>Email: <a href="mailto:maksim.shevchik@gmail.com">maksim.shevchik@gmail.com</a></p>
       <p>Telefon: <a href="tel:+48795031220">+48 795 031 220</a></p>

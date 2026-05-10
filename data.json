@@ -1,0 +1,13 @@
+{
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Git"
+    ],
+    "projects": [
+      "Strona CV — osobista strona prezentująca moje umiejętności",
+      "Todo App CRUD — aplikacja do zarządzania zadaniami z SQL oraz React+Vite"
+    ]
+  }
